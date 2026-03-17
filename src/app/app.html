@@ -15,10 +15,15 @@
       <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
     </ul>
 
-    <a href="https://wa.me/919599143721?text=🚚 SHIP" target="_blank" rel="noopener noreferrer"
-      class="whatsapp-btn desktop-only">
-      <i class="fab fa-whatsapp"></i> WhatsApp Us
-    </a>
+    <div class="navbar-right">
+      <button class="theme-toggle" (click)="toggleTheme()" [title]="isDarkMode() ? 'Switch to Light' : 'Switch to Dark'">
+        {{ isDarkMode() ? '☀️' : '🌙' }}
+      </button>
+      <a href="https://wa.me/919599143721?text=🚚 SHIP" target="_blank" rel="noopener noreferrer"
+        class="whatsapp-btn desktop-only">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
   </nav>
 
   <section id="home" class="hero">
